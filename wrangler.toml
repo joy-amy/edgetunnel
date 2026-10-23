@@ -3,11 +3,6 @@ main = "_worker.js"
 compatibility_date = "2025-11-04"
 keep_vars = true
 
-# 2026-10-23: 显式声明自定义域名路由，防止 Workers Builds 部署后路由丢失导致 522
-routes = [
-	{ pattern = "mo.myj0y.cc.cd/*", zone_name = "myj0y.cc.cd" }
-]
-
 #[[kv_namespaces]]
-#binding = "KV"				#KV绑定名默认不可修改
+#binding = "KV"			#KV绑定名默认不可修改
 #id = ""				#KV数据库id
